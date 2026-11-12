@@ -1,0 +1,276 @@
+{
+  "kind": "built-site-static-checks",
+  "passed": true,
+  "count": 42,
+  "copy_keys": 78,
+  "checks": [
+    {
+      "name": "balanced built HTML",
+      "passed": true
+    },
+    {
+      "name": "unique IDs",
+      "passed": true
+    },
+    {
+      "name": "stable anchors",
+      "passed": true
+    },
+    {
+      "name": "only real local anchors",
+      "passed": true
+    },
+    {
+      "name": "all public resources exist",
+      "passed": true
+    },
+    {
+      "name": "no external HTML requests",
+      "passed": true
+    },
+    {
+      "name": "no external CSS requests",
+      "passed": true
+    },
+    {
+      "name": "all 78 copy keys in built app",
+      "passed": true
+    },
+    {
+      "name": "all rendered copy exactly matches JSON",
+      "passed": true
+    },
+    {
+      "name": "no unresolved template",
+      "passed": true
+    },
+    {
+      "name": "one h1 and main",
+      "passed": true
+    },
+    {
+      "name": "Vietnamese UTF-8",
+      "passed": true
+    },
+    {
+      "name": "no data collection or embedded services",
+      "passed": true
+    },
+    {
+      "name": "exactly three static messages",
+      "passed": true
+    },
+    {
+      "name": "three of nine progress segments active",
+      "passed": true
+    },
+    {
+      "name": "three principles plus four stages",
+      "passed": true
+    },
+    {
+      "name": "native disclosure",
+      "passed": true
+    },
+    {
+      "name": "no runtime API, tracking, cookies or storage",
+      "passed": true
+    },
+    {
+      "name": "no fake live response",
+      "passed": true
+    },
+    {
+      "name": "exact navy and teal",
+      "passed": true
+    },
+    {
+      "name": "built CSS and JS match source",
+      "passed": true
+    },
+    {
+      "name": "public output contains only four intended files",
+      "passed": true
+    },
+    {
+      "name": "no email addresses in delivery text",
+      "passed": true
+    },
+    {
+      "name": "no key-like secrets in delivery text",
+      "passed": true
+    },
+    {
+      "name": "contrast navy/surface",
+      "passed": true
+    },
+    {
+      "name": "contrast teal/surface",
+      "passed": true
+    },
+    {
+      "name": "contrast surface/tealHover",
+      "passed": true
+    },
+    {
+      "name": "contrast surface/tealActive",
+      "passed": true
+    },
+    {
+      "name": "contrast textMuted/surface",
+      "passed": true
+    },
+    {
+      "name": "contrast textMuted/heroStart",
+      "passed": true
+    },
+    {
+      "name": "contrast teal/heroStart",
+      "passed": true
+    },
+    {
+      "name": "contrast navy/aiBubble",
+      "passed": true
+    },
+    {
+      "name": "contrast textMuted/aiBubble",
+      "passed": true
+    },
+    {
+      "name": "contrast textMuted/studentBubble",
+      "passed": true
+    },
+    {
+      "name": "contrast textMuted/trustBg",
+      "passed": true
+    },
+    {
+      "name": "contrast teal/trustBg",
+      "passed": true
+    },
+    {
+      "name": "contrast textMuted/stepsBg",
+      "passed": true
+    },
+    {
+      "name": "contrast footerText/navy",
+      "passed": true
+    },
+    {
+      "name": "contrast accentLight/navy",
+      "passed": true
+    },
+    {
+      "name": "contrast controlBorder/surface",
+      "passed": true
+    },
+    {
+      "name": "contrast focus/heroStart",
+      "passed": true
+    },
+    {
+      "name": "contrast focus/trustBg",
+      "passed": true
+    }
+  ],
+  "contrasts": [
+    {
+      "pair": "navy/surface",
+      "ratio": 11.81,
+      "minimum": 4.5
+    },
+    {
+      "pair": "teal/surface",
+      "ratio": 5.95,
+      "minimum": 4.5
+    },
+    {
+      "pair": "surface/tealHover",
+      "ratio": 7.91,
+      "minimum": 4.5
+    },
+    {
+      "pair": "surface/tealActive",
+      "ratio": 9.82,
+      "minimum": 4.5
+    },
+    {
+      "pair": "textMuted/surface",
+      "ratio": 5.8,
+      "minimum": 4.5
+    },
+    {
+      "pair": "textMuted/heroStart",
+      "ratio": 5.36,
+      "minimum": 4.5
+    },
+    {
+      "pair": "teal/heroStart",
+      "ratio": 5.5,
+      "minimum": 4.5
+    },
+    {
+      "pair": "navy/aiBubble",
+      "ratio": 10.66,
+      "minimum": 4.5
+    },
+    {
+      "pair": "textMuted/aiBubble",
+      "ratio": 5.24,
+      "minimum": 4.5
+    },
+    {
+      "pair": "textMuted/studentBubble",
+      "ratio": 4.97,
+      "minimum": 4.5
+    },
+    {
+      "pair": "textMuted/trustBg",
+      "ratio": 5.13,
+      "minimum": 4.5
+    },
+    {
+      "pair": "teal/trustBg",
+      "ratio": 5.26,
+      "minimum": 4.5
+    },
+    {
+      "pair": "textMuted/stepsBg",
+      "ratio": 5.11,
+      "minimum": 4.5
+    },
+    {
+      "pair": "footerText/navy",
+      "ratio": 8.74,
+      "minimum": 4.5
+    },
+    {
+      "pair": "accentLight/navy",
+      "ratio": 7.06,
+      "minimum": 4.5
+    },
+    {
+      "pair": "controlBorder/surface",
+      "ratio": 4.37,
+      "minimum": 3
+    },
+    {
+      "pair": "focus/heroStart",
+      "ratio": 10.91,
+      "minimum": 3
+    },
+    {
+      "pair": "focus/trustBg",
+      "ratio": 10.43,
+      "minimum": 3
+    }
+  ],
+  "email_files": [],
+  "secret_files": [],
+  "public_sha256": {
+    "app.js": "d565b4f065349325c4b834af8e3f3e8ce278cfe7582d3830cb67e432129cf15f",
+    "assets/mark.svg": "b55e6dea6c3d510f1efb7986e481e00bdf5b231644c4e321133a185be9280326",
+    "index.html": "b87a0e366c43e0b12815b64f95647eef49eb8a8816cc202589ea16a29952fc08",
+    "styles.css": "10c4afade99c7c5a2a10fff664729c49170fa6dd8669b874b4246c55f3be4e38"
+  }
+}

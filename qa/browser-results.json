@@ -1,0 +1,634 @@
+{
+  "date": "2026-11-12",
+  "browser": "Chrome/157.0.8103.51",
+  "platform": "win32",
+  "testedOrigin": "http://127.0.0.1:4173",
+  "testedOutput": "dist/",
+  "passed": true,
+  "count": 88,
+  "checks": [
+    {
+      "name": "TE-02: application JS executes",
+      "passed": true
+    },
+    {
+      "name": "CP-01: live DOM matches all 78 JSON strings",
+      "passed": true
+    },
+    {
+      "name": "UI-05: no overflow at 1440px",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "UI-02/03/04: grid layout at 1440px",
+      "passed": true
+    },
+    {
+      "name": "UI: exact container at 1440px",
+      "passed": true
+    },
+    {
+      "name": "IN-06: native details and reflow at 1440px",
+      "passed": true
+    },
+    {
+      "name": "IN-06: Space closes details at 1440px",
+      "passed": true
+    },
+    {
+      "name": "UI-05: no overflow at 1024px",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "UI-02/03/04: grid layout at 1024px",
+      "passed": true
+    },
+    {
+      "name": "UI: exact container at 1024px",
+      "passed": true
+    },
+    {
+      "name": "IN-06: native details and reflow at 1024px",
+      "passed": true
+    },
+    {
+      "name": "IN-06: Space closes details at 1024px",
+      "passed": true
+    },
+    {
+      "name": "UI-05: no overflow at 1023px",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "UI-02/03/04: grid layout at 1023px",
+      "passed": true
+    },
+    {
+      "name": "UI: exact container at 1023px",
+      "passed": true
+    },
+    {
+      "name": "IN-06: native details and reflow at 1023px",
+      "passed": true
+    },
+    {
+      "name": "IN-06: Space closes details at 1023px",
+      "passed": true
+    },
+    {
+      "name": "UI-05: no overflow at 768px",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "UI-02/03/04: grid layout at 768px",
+      "passed": true
+    },
+    {
+      "name": "UI: exact container at 768px",
+      "passed": true
+    },
+    {
+      "name": "IN-06: native details and reflow at 768px",
+      "passed": true
+    },
+    {
+      "name": "IN-06: Space closes details at 768px",
+      "passed": true
+    },
+    {
+      "name": "UI-05: no overflow at 767px",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "UI-02/03/04: grid layout at 767px",
+      "passed": true
+    },
+    {
+      "name": "UI: exact container at 767px",
+      "passed": true
+    },
+    {
+      "name": "IN-06: native details and reflow at 767px",
+      "passed": true
+    },
+    {
+      "name": "IN-06: Space closes details at 767px",
+      "passed": true
+    },
+    {
+      "name": "UI-05: no overflow at 480px",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "UI-02/03/04: grid layout at 480px",
+      "passed": true
+    },
+    {
+      "name": "UI: exact container at 480px",
+      "passed": true
+    },
+    {
+      "name": "IN-06: native details and reflow at 480px",
+      "passed": true
+    },
+    {
+      "name": "IN-06: Space closes details at 480px",
+      "passed": true
+    },
+    {
+      "name": "UI-05: no overflow at 479px",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "UI-02/03/04: grid layout at 479px",
+      "passed": true
+    },
+    {
+      "name": "UI: exact container at 479px",
+      "passed": true
+    },
+    {
+      "name": "UI-03: full width CTA at 479px",
+      "passed": true
+    },
+    {
+      "name": "IN-06: native details and reflow at 479px",
+      "passed": true
+    },
+    {
+      "name": "IN-06: Space closes details at 479px",
+      "passed": true
+    },
+    {
+      "name": "UI-05: no overflow at 390px",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "UI-02/03/04: grid layout at 390px",
+      "passed": true
+    },
+    {
+      "name": "UI: exact container at 390px",
+      "passed": true
+    },
+    {
+      "name": "UI-03: full width CTA at 390px",
+      "passed": true
+    },
+    {
+      "name": "IN-06: native details and reflow at 390px",
+      "passed": true
+    },
+    {
+      "name": "IN-06: Space closes details at 390px",
+      "passed": true
+    },
+    {
+      "name": "UI-05: no overflow at 320px",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "UI-02/03/04: grid layout at 320px",
+      "passed": true
+    },
+    {
+      "name": "UI: exact container at 320px",
+      "passed": true
+    },
+    {
+      "name": "UI-03: full width CTA at 320px",
+      "passed": true
+    },
+    {
+      "name": "IN-06: native details and reflow at 320px",
+      "passed": true
+    },
+    {
+      "name": "IN-06: Space closes details at 320px",
+      "passed": true
+    },
+    {
+      "name": "UI-05: no overflow at 1920px",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "UI-02/03/04: grid layout at 1920px",
+      "passed": true
+    },
+    {
+      "name": "UI: exact container at 1920px",
+      "passed": true
+    },
+    {
+      "name": "IN-06: native details and reflow at 1920px",
+      "passed": true
+    },
+    {
+      "name": "IN-06: Space closes details at 1920px",
+      "passed": true
+    },
+    {
+      "name": "IN-03: menu initially closed",
+      "passed": true
+    },
+    {
+      "name": "IN-03: Enter opens menu and synchronizes ARIA/name",
+      "passed": true
+    },
+    {
+      "name": "AX-02: Tab enters first navigation link",
+      "passed": true
+    },
+    {
+      "name": "AX-02: Shift+Tab returns to menu",
+      "passed": true
+    },
+    {
+      "name": "IN-04: Escape closes and restores focus",
+      "passed": true
+    },
+    {
+      "name": "IN-01/04: mobile Coach anchor closes menu and focuses target",
+      "passed": true
+    },
+    {
+      "name": "IN-01: Coach CTA returns to steps",
+      "passed": true
+    },
+    {
+      "name": "IN-01: hero secondary CTA",
+      "passed": true
+    },
+    {
+      "name": "IN-01: hero primary CTA",
+      "passed": true
+    },
+    {
+      "name": "IN-08: native browser Back restores hash",
+      "passed": true
+    },
+    {
+      "name": "IN-08: native browser Forward restores hash",
+      "passed": true
+    },
+    {
+      "name": "IN-02: logo returns to page start",
+      "passed": true
+    },
+    {
+      "name": "AX-03: skip link and focus indicator visible",
+      "passed": true,
+      "detail": {
+        "outline": "3px",
+        "style": "solid",
+        "top": 8
+      }
+    },
+    {
+      "name": "IN-02: skip link focuses main",
+      "passed": true
+    },
+    {
+      "name": "IN-05: desktop resize resets menu",
+      "passed": true
+    },
+    {
+      "name": "IN-05: mobile resize moves focus out of hidden nav",
+      "passed": true
+    },
+    {
+      "name": "AX-02: full desktop keyboard order excludes static cards",
+      "passed": true,
+      "detail": [
+        "#ml-top",
+        "#ml-coach",
+        "#ml-steps",
+        "#ml-steps",
+        "#ml-coach",
+        "#ml-steps",
+        "SUMMARY"
+      ]
+    },
+    {
+      "name": "AX-03: visible controls meet 44px target",
+      "passed": true,
+      "detail": [
+        {
+          "name": "Chuyển đến nội dung chính",
+          "width": 231.25,
+          "height": 56
+        },
+        {
+          "name": "M\n        ModelLab AI",
+          "width": 181.296875,
+          "height": 44
+        },
+        {
+          "name": "Giới thiệu",
+          "width": 69.109375,
+          "height": 44
+        },
+        {
+          "name": "Coach 7",
+          "width": 55.453125,
+          "height": 44
+        },
+        {
+          "name": "Quy trình học",
+          "width": 96.375,
+          "height": 44
+        },
+        {
+          "name": "Khám phá cách học↓",
+          "width": 191.390625,
+          "height": 48.5
+        },
+        {
+          "name": "Tìm hiểu Coach 7",
+          "width": 159.125,
+          "height": 48.5
+        },
+        {
+          "name": "Xem quy trình học↑",
+          "width": 185.203125,
+          "height": 48.5
+        },
+        {
+          "name": "Tìm hiểu về dữ liệu học tập dự kiến",
+          "width": 776.25,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "name": "AX-06: reduced motion disables smooth scrolling",
+      "passed": true
+    },
+    {
+      "name": "AX-06: reduced motion anchor scroll completes immediately",
+      "passed": true,
+      "detail": {
+        "top": -0.40625,
+        "hash": "#ml-steps",
+        "behavior": "auto"
+      }
+    },
+    {
+      "name": "AX-08: forced-colors emulation retains control border",
+      "passed": true
+    },
+    {
+      "name": "UI-06: text spacing at 1440px",
+      "passed": true
+    },
+    {
+      "name": "UI-06: text spacing at 390px",
+      "passed": true
+    },
+    {
+      "name": "UI-06: text spacing at 320px",
+      "passed": true
+    },
+    {
+      "name": "IN-07: no-JS navigation and content visible",
+      "passed": true
+    },
+    {
+      "name": "IN-07: native details works without JS",
+      "passed": true
+    },
+    {
+      "name": "IN-07: anchor works without JS",
+      "passed": true
+    },
+    {
+      "name": "AX-01: accessibility heading hierarchy",
+      "passed": true,
+      "detail": [
+        {
+          "name": "Tự xây dựng mô hình. AI đồng hành, không làm thay.",
+          "level": 1
+        },
+        {
+          "name": "Học Vật lí bằng cách tự khám phá",
+          "level": 2
+        },
+        {
+          "name": "Hành trình học tập diễn ra thế nào?",
+          "level": 2
+        },
+        {
+          "name": "Coach 7 là công cụ xây dựng và kiểm nghiệm mô hình",
+          "level": 2
+        },
+        {
+          "name": "Học tập có trách nhiệm và bảo vệ dữ liệu",
+          "level": 2
+        },
+        {
+          "name": "Phiên học tập minh họa",
+          "level": 2
+        },
+        {
+          "name": "Học sinh làm chủ",
+          "level": 3
+        },
+        {
+          "name": "Gợi ý đúng lúc",
+          "level": 3
+        },
+        {
+          "name": "Lưu hành trình học tập",
+          "level": 3
+        },
+        {
+          "name": "Hiểu vấn đề",
+          "level": 3
+        },
+        {
+          "name": "Tạo mô hình",
+          "level": 3
+        },
+        {
+          "name": "Nhận hỗ trợ",
+          "level": 3
+        },
+        {
+          "name": "Kiểm chứng",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "name": "AX-05: decorative icons hidden; transcript not live",
+      "passed": true
+    },
+    {
+      "name": "TE-03: no application cookies or storage",
+      "passed": true,
+      "detail": {
+        "cookies": "",
+        "local": 0,
+        "session": 0,
+        "databases": []
+      }
+    },
+    {
+      "name": "TE-03: no external network requests",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "TE-04: no resource HTTP errors",
+      "passed": true
+    },
+    {
+      "name": "TE-04: no console/runtime/network errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "layouts": [
+    {
+      "width": 1440,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "container": 1160,
+      "hero": 2,
+      "principles": 3,
+      "steps": 4,
+      "coach": 2,
+      "menu": "none",
+      "overflow": []
+    },
+    {
+      "width": 1024,
+      "clientWidth": 1009,
+      "scrollWidth": 1009,
+      "container": 945,
+      "hero": 2,
+      "principles": 3,
+      "steps": 4,
+      "coach": 2,
+      "menu": "none",
+      "overflow": []
+    },
+    {
+      "width": 1023,
+      "clientWidth": 1008,
+      "scrollWidth": 1008,
+      "container": 944,
+      "hero": 1,
+      "principles": 3,
+      "steps": 2,
+      "coach": 2,
+      "menu": "flex",
+      "overflow": []
+    },
+    {
+      "width": 768,
+      "clientWidth": 753,
+      "scrollWidth": 753,
+      "container": 689,
+      "hero": 1,
+      "principles": 3,
+      "steps": 2,
+      "coach": 2,
+      "menu": "flex",
+      "overflow": []
+    },
+    {
+      "width": 767,
+      "clientWidth": 752,
+      "scrollWidth": 752,
+      "container": 712,
+      "hero": 1,
+      "principles": 1,
+      "steps": 2,
+      "coach": 1,
+      "menu": "flex",
+      "overflow": []
+    },
+    {
+      "width": 480,
+      "clientWidth": 465,
+      "scrollWidth": 465,
+      "container": 425,
+      "hero": 1,
+      "principles": 1,
+      "steps": 2,
+      "coach": 1,
+      "menu": "flex",
+      "overflow": []
+    },
+    {
+      "width": 479,
+      "clientWidth": 464,
+      "scrollWidth": 464,
+      "container": 424,
+      "hero": 1,
+      "principles": 1,
+      "steps": 1,
+      "coach": 1,
+      "menu": "flex",
+      "overflow": []
+    },
+    {
+      "width": 390,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "container": 335,
+      "hero": 1,
+      "principles": 1,
+      "steps": 1,
+      "coach": 1,
+      "menu": "flex",
+      "overflow": []
+    },
+    {
+      "width": 320,
+      "clientWidth": 305,
+      "scrollWidth": 305,
+      "container": 265,
+      "hero": 1,
+      "principles": 1,
+      "steps": 1,
+      "coach": 1,
+      "menu": "flex",
+      "overflow": []
+    },
+    {
+      "width": 1920,
+      "clientWidth": 1905,
+      "scrollWidth": 1905,
+      "container": 1160,
+      "hero": 2,
+      "principles": 3,
+      "steps": 4,
+      "coach": 2,
+      "menu": "none",
+      "overflow": []
+    }
+  ],
+  "resources": [
+    "200 http://127.0.0.1:4173/",
+    "200 http://127.0.0.1:4173/styles.css",
+    "200 http://127.0.0.1:4173/app.js",
+    "200 http://127.0.0.1:4173/assets/mark.svg"
+  ],
+  "limitations": [
+    "Real browser zoom 200/400% requires separate UI check.",
+    "NVDA/VoiceOver and real OS high contrast not tested.",
+    "No student comprehension study."
+  ]
+}

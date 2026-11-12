@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{meta.description}}" data-copy-attr="content:meta.description">
+  <meta name="theme-color" content="#183C48">
+  <title data-copy="meta.title">{{meta.title}}</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body class="ml" id="ml-top" tabindex="-1">
+  <a class="ml-skip" href="#ml-main" data-copy="a11y.skip">{{a11y.skip}}</a>
+  <header class="ml-header">
+    <div class="ml-container ml-header-inner">
+      <a class="ml-brand" href="#ml-top">
+        <span class="ml-mark" aria-hidden="true">M</span>
+        <span><span data-copy="brand.name">{{brand.name}}</span> <span class="ml-brand-ai" data-copy="brand.ai">{{brand.ai}}</span></span>
+      </a>
+      <span class="ml-badge ml-demo-badge" data-copy="nav.status">{{nav.status}}</span>
+      <button class="ml-menu" type="button" aria-expanded="false" aria-controls="ml-navigation" data-open-label="{{menu.open}}" data-close-label="{{menu.close}}" hidden><span class="ml-menu-label">{{menu.open}}</span><span aria-hidden="true">☰</span></button>
+      <nav class="ml-navigation" id="ml-navigation" aria-label="Điều hướng chính">
+        <a href="#ml-top" data-copy="nav.about">{{nav.about}}</a>
+        <a href="#ml-coach" data-copy="nav.coach">{{nav.coach}}</a>
+        <a href="#ml-steps" data-copy="nav.journey">{{nav.journey}}</a>
+      </nav>
+    </div>
+  </header>
+  <main id="ml-main" tabindex="-1">
+    <section class="ml-hero" aria-labelledby="ml-title">
+      <div class="ml-container ml-hero-grid">
+        <div>
+          <p class="ml-eyebrow" data-copy="hero.eyebrow">{{hero.eyebrow}}</p>
+          <h1 id="ml-title"><span data-copy="hero.title.first">{{hero.title.first}}</span><br><em data-copy="hero.title.second">{{hero.title.second}}</em></h1>
+          <p class="ml-lead" data-copy="hero.lead">{{hero.lead}}</p>
+          <div class="ml-cta">
+            <a class="ml-button ml-primary" href="#ml-steps"><span data-copy="hero.cta.primary">{{hero.cta.primary}}</span><span aria-hidden="true">↓</span></a>
+            <a class="ml-button ml-secondary" href="#ml-coach" data-copy="hero.cta.secondary">{{hero.cta.secondary}}</a>
+          </div>
+          <p class="ml-small ml-hero-note" data-copy="hero.note">{{hero.note}}</p>
+        </div>
+        <aside class="ml-example" aria-labelledby="ml-example-title">
+          <div class="ml-example-head"><h2 id="ml-example-title" data-copy="example.title">{{example.title}}</h2><span class="ml-small" data-copy="example.step">{{example.step}}</span></div>
+          <div class="ml-progress" aria-hidden="true"><span class="is-on"></span><span class="is-on"></span><span class="is-on"></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <ol class="ml-transcript">
+            <li class="ml-bubble ml-bot"><p class="ml-speaker" data-copy="example.speaker.ai">{{example.speaker.ai}}</p><p data-copy="example.message.1">{{example.message.1}}</p></li>
+            <li class="ml-bubble ml-student"><p class="ml-speaker" data-copy="example.speaker.student">{{example.speaker.student}}</p><p data-copy="example.message.2">{{example.message.2}}</p></li>
+            <li class="ml-bubble ml-bot"><p class="ml-speaker" data-copy="example.speaker.ai">{{example.speaker.ai}}</p><p data-copy="example.message.3">{{example.message.3}}</p></li>
+          </ol>
+          <p class="ml-small ml-example-note" data-copy="example.note">{{example.note}}</p>
+        </aside>
+      </div>
+    </section>
+    <section class="ml-section" id="ml-features" tabindex="-1" aria-labelledby="ml-principles-title">
+      <div class="ml-container">
+        <div class="ml-section-intro"><h2 id="ml-principles-title" data-copy="principles.title">{{principles.title}}</h2><p data-copy="principles.intro">{{principles.intro}}</p></div>
+        <div class="ml-features">
+          <article class="ml-card"><div class="ml-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg></div><h3 data-copy="principles.1.title">{{principles.1.title}}</h3><p data-copy="principles.1.body">{{principles.1.body}}</p></article>
+          <article class="ml-card"><div class="ml-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 3 14.5 9.5 21 12 14.5 14.5 12 21 9.5 14.5 3 12 9.5 9.5Z"/></svg></div><h3 data-copy="principles.2.title">{{principles.2.title}}</h3><p data-copy="principles.2.body">{{principles.2.body}}</p></article>
+          <article class="ml-card"><div class="ml-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div><div class="ml-card-title"><h3 data-copy="principles.3.title">{{principles.3.title}}</h3><span class="ml-badge" data-copy="principles.3.badge">{{principles.3.badge}}</span></div><p data-copy="principles.3.body">{{principles.3.body}}</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="ml-section ml-steps" id="ml-steps" tabindex="-1" aria-labelledby="ml-journey-title">
+      <div class="ml-container">
+        <div class="ml-section-intro"><h2 id="ml-journey-title" data-copy="journey.title">{{journey.title}}</h2><p data-copy="journey.intro">{{journey.intro}}</p><p class="ml-small ml-journey-note" data-copy="journey.note">{{journey.note}}</p></div>
+        <ol class="ml-step-grid">
+          <li class="ml-card"><span class="ml-number" aria-hidden="true" data-copy="journey.1.number">{{journey.1.number}}</span><h3 data-copy="journey.1.title">{{journey.1.title}}</h3><p data-copy="journey.1.body">{{journey.1.body}}</p></li>
+          <li class="ml-card"><span class="ml-number" aria-hidden="true" data-copy="journey.2.number">{{journey.2.number}}</span><h3 data-copy="journey.2.title">{{journey.2.title}}</h3><p data-copy="journey.2.body">{{journey.2.body}}</p></li>
+          <li class="ml-card"><span class="ml-number" aria-hidden="true" data-copy="journey.3.number">{{journey.3.number}}</span><h3 data-copy="journey.3.title">{{journey.3.title}}</h3><p data-copy="journey.3.body">{{journey.3.body}}</p></li>
+          <li class="ml-card"><span class="ml-number" aria-hidden="true" data-copy="journey.4.number">{{journey.4.number}}</span><h3 data-copy="journey.4.title">{{journey.4.title}}</h3><p data-copy="journey.4.body">{{journey.4.body}}</p></li>
+        </ol>
+      </div>
+    </section>
+    <section class="ml-section" id="ml-coach" tabindex="-1" aria-labelledby="ml-coach-title">
+      <div class="ml-container ml-coach-grid">
+        <div><p class="ml-eyebrow" data-copy="coach.eyebrow">{{coach.eyebrow}}</p><h2 id="ml-coach-title" data-copy="coach.title">{{coach.title}}</h2><p class="ml-coach-body" data-copy="coach.body">{{coach.body}}</p><p class="ml-small ml-coach-limit" data-copy="coach.limit">{{coach.limit}}</p><a class="ml-button ml-secondary" href="#ml-steps"><span data-copy="coach.cta">{{coach.cta}}</span><span aria-hidden="true">↑</span></a></div>
+        <ol class="ml-coach-panel" aria-label="Hoạt động trên Coach 7">
+          <li><span aria-hidden="true">01</span><p data-copy="coach.activity.1">{{coach.activity.1}}</p></li>
+          <li><span aria-hidden="true">02</span><p data-copy="coach.activity.2">{{coach.activity.2}}</p></li>
+          <li><span aria-hidden="true">03</span><p data-copy="coach.activity.3">{{coach.activity.3}}</p></li>
+          <li><span aria-hidden="true">04</span><p data-copy="coach.activity.4">{{coach.activity.4}}</p></li>
+        </ol>
+      </div>
+    </section>
+    <section class="ml-trust" id="ml-trust" tabindex="-1" aria-labelledby="ml-trust-title">
+      <div class="ml-container ml-trust-inner">
+        <svg class="ml-shield" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 3 8 3v6c0 5-8 9-8 9S4 17 4 12V6Z"/><path d="m8 12 3 3 5-6"/></svg>
+        <div><h2 id="ml-trust-title" data-copy="trust.title">{{trust.title}}</h2><p data-copy="trust.body">{{trust.body}}</p><p class="ml-current-note" data-copy="trust.current">{{trust.current}}</p>
+          <details class="ml-privacy"><summary data-copy="trust.summary">{{trust.summary}}</summary>
+            <dl><dt data-copy="trust.data.title">{{trust.data.title}}</dt><dd data-copy="trust.data.body">{{trust.data.body}}</dd><dt data-copy="trust.access.title">{{trust.access.title}}</dt><dd data-copy="trust.access.body">{{trust.access.body}}</dd><dt data-copy="trust.retention.title">{{trust.retention.title}}</dt><dd data-copy="trust.retention.body">{{trust.retention.body}}</dd><dt data-copy="trust.consent.title">{{trust.consent.title}}</dt><dd data-copy="trust.consent.body">{{trust.consent.body}}</dd></dl>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="ml-footer">
+    <div class="ml-container">
+      <div class="ml-footer-row"><p data-copy="footer.brand">{{footer.brand}}</p><p data-copy="footer.status">{{footer.status}}</p></div>
+      <div class="ml-future"><p data-copy="footer.future.title">{{footer.future.title}}</p><ul><li data-copy="footer.future.guide">{{footer.future.guide}}</li><li data-copy="footer.future.tutor">{{footer.future.tutor}}</li><li data-copy="footer.future.portfolio">{{footer.future.portfolio}}</li><li data-copy="footer.future.login">{{footer.future.login}}</li></ul></div>
+    </div>
+  </footer>
+</body>
+</html>

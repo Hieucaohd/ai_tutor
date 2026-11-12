@@ -1,0 +1,12 @@
+# Original input package is preserved locally; implementation lives at the root.
+/ModelLab_AI_Trang1_Codex_v1.0_2026-11-12/
+.vercel/
+.env
+.env.*
+!.env.example
+node_modules/
+__pycache__/
+*.pyc
+/qa/screenshots/
+/delivery/
+*.log

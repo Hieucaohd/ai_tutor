@@ -1,0 +1,50 @@
+[
+  {
+    "path": "/",
+    "status": 200
+  },
+  {
+    "path": "/styles.css",
+    "status": 200
+  },
+  {
+    "path": "/app.js",
+    "status": 200
+  },
+  {
+    "path": "/assets/mark.svg",
+    "status": 200
+  },
+  {
+    "path": "/huong-dan",
+    "status": 404
+  },
+  {
+    "path": "/tro-giang",
+    "status": 404
+  },
+  {
+    "path": "/ho-so",
+    "status": 404
+  },
+  {
+    "path": "/dang-nhap",
+    "status": 404
+  },
+  {
+    "path": "/quyen-rieng-tu",
+    "status": 404
+  },
+  {
+    "path": "/.git/config",
+    "status": 404
+  },
+  {
+    "path": "/content/copy.vi.json",
+    "status": 404
+  },
+  {
+    "path": "/docs/01_PRD_VA_PHAM_VI.md",
+    "status": 404
+  }
+]

@@ -1,0 +1,13 @@
+.git
+.vercel
+.env*
+node_modules
+ModelLab_AI_Trang1_Codex_v1.0_2026-11-12
+src
+content
+design
+docs
+qa
+tools
+assets
+README.md
