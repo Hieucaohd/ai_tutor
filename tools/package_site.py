@@ -5,7 +5,7 @@ import json
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-folders = ['src', 'content', 'design', 'assets', 'dist', 'docs', 'qa', 'tools']
+folders = ['src', 'content', 'design', 'assets', 'dist', 'docs', 'qa', 'tools', 'reference', 'prompts']
 files = [ROOT / name for name in ['README.md', '.gitattributes', '.gitignore', '.vercelignore', 'vercel.json']]
 for folder in folders:
     files.extend(p for p in (ROOT / folder).rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.suffix != '.pyc' and p.name != 'package-results.json')

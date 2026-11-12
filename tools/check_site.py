@@ -81,7 +81,9 @@ check((ROOT / 'src/styles.css').read_bytes() == (OUTPUT / 'styles.css').read_byt
 expected_files = {'index.html', 'styles.css', 'app.js', 'assets/mark.svg'}
 public_files = {p.relative_to(OUTPUT).as_posix() for p in OUTPUT.rglob('*') if p.is_file()}
 check(public_files == expected_files, 'public output contains only four intended files')
-texts = [(p.relative_to(ROOT).as_posix(), p.read_text(encoding='utf-8')) for folder in ['src', 'content', 'design', 'assets', 'dist', 'docs', 'qa', 'tools'] for p in (ROOT / folder).rglob('*') if p.is_file() and p.suffix in {'.html', '.css', '.js', '.mjs', '.json', '.svg', '.md', '.py'}]
+text_files = [p for folder in ['src', 'content', 'design', 'assets', 'dist', 'docs', 'qa', 'tools', 'reference', 'prompts'] for p in (ROOT / folder).rglob('*') if p.is_file() and p.suffix in {'.html', '.css', '.js', '.mjs', '.json', '.svg', '.md', '.py', '.txt'}]
+text_files.extend(p for p in ROOT.iterdir() if p.is_file() and p.name in {'README.md', 'vercel.json', '.gitignore', '.gitattributes', '.vercelignore'})
+texts = [(p.relative_to(ROOT).as_posix(), p.read_text(encoding='utf-8')) for p in text_files]
 email_files = [p for p, t in texts if re.search(r'[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}', t, re.I)]
 secret_files = [p for p, t in texts if re.search(r'\bsk-(?:proj-)?[A-Za-z0-9_-]{20,}|-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----', t)]
 check(not email_files, 'no email addresses in delivery text')

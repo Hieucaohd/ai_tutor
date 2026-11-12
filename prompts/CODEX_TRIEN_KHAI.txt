@@ -1,0 +1,31 @@
+Hãy triển khai Trang 1 – Giới thiệu của website ModelLab AI từ gói thiết kế đi kèm. Làm đến khi có mã chạy và báo cáo kiểm tra; không chỉ trả lại kế hoạch.
+
+1. Đọc README.md và các tệp docs/01_PRD_VA_PHAM_VI.md, docs/02_UI_RESPONSIVE.md, docs/03_COMPONENTS_STATES_A11Y.md, docs/05_ROUTING_VA_TICH_HOP.md, docs/06_DU_LIEU_VA_NGUYEN_TAC_SU_PHAM.md, qa/ACCEPTANCE_CRITERIA.md.
+2. Dùng content/copy.vi.json làm nguồn câu chữ chính xác; design/tokens.json làm nguồn thiết kế; prototype/index.html, styles.css và app.js làm mẫu giao diện/hành vi. docs/07_NGUON_VA_QUYET_DINH.md giải thích thay đổi từ mockup gốc. Không tự viết lại copy quảng bá.
+3. Nếu đang ở dự án có framework, đọc quy tắc của dự án và giữ framework/kiến trúc hiện có. Không cài lại hoặc thay ứng dụng. Chuyển mẫu HTML thành component theo quy ước sẵn có, giới hạn CSS dưới namespace --ml-/module. Nếu là thư mục mới chưa có framework, dùng HTML/CSS/JS không phụ thuộc thư viện như prototype, không cài React chỉ để dựng một landing page.
+
+PHẠM VI BẮT BUỘC
+- Chỉ triển khai landing route /. Header; hero có transcript tĩnh; ba thẻ nguyên tắc; bốn giai đoạn; Coach 7; thông tin bảo vệ dữ liệu mở rộng; footer.
+- Học sinh tự quyết định và thao tác mô hình hóa trên Coach 7. AI hỏi/gợi mở, không làm thay. Website không tự điều khiển Coach 7 hoặc đọc màn hình.
+- Nền sáng, navy #183C48, teal #226D78. Responsive theo spec, đọc đầy đủ từ 320px. Không thay bằng giao diện tối hoặc ảnh robot/ảnh kho.
+- Chỉ dùng anchor thật cho các thao tác hiện có. Giữ ID ml-top, ml-main, ml-features, ml-steps, ml-coach, ml-trust.
+- Mobile có menu tăng cường bằng JS; keyboard/Enter/Space/Escape, aria-expanded/aria-controls, focus sau anchor. Nếu JS tắt vẫn đọc và điều hướng được. Details dữ liệu native, không modal.
+- Transcript là ví dụ: đúng 3 lượt, Bước 3/9, nhãn minh họa. Không ô nhập, gửi, upload, typing, “online” hoặc phản hồi AI giả.
+- Giữ rõ trạng thái demo/chưa triển khai ở đầu trang, transcript và footer. Các trang tương lai chỉ là tên “Dự kiến” chưa clickable.
+
+GIỚI HẠN KHÔNG ĐƯỢC VI PHẠM
+- Không xây login, OpenAI API, backend hoặc lưu hồ sơ trong yêu cầu này. Không yêu cầu khóa API để chạy Trang 1. Không mô phỏng đã login/đã lưu bằng localStorage.
+- Không đưa email quản trị, thông tin tài khoản cá nhân, API key hay secrets vào file công khai, HTML comment, JavaScript, metadata hoặc fixture.
+- Không sử dụng phiên ChatGPT cá nhân để làm chatbot cho học sinh. Tích hợp tương lai qua máy chủ với khóa được bảo vệ, không phải tính năng hiện có.
+- Không thêm analytics, CDN, tracking, form thu dữ liệu, cookie banner giả, testimonial hoặc số liệu thành tích.
+- Không tự điền thời hạn lưu, cơ sở đồng ý hoặc cam kết bảo mật tuyệt đối. Dữ liệu/hồ sơ ở thì dự kiến.
+- Không bật link tới route chưa tồn tại, không href="#" để giả tương tác.
+- Chưa xuất bản/deploy ra Internet. Hoàn thiện và kiểm tra cục bộ trước.
+
+KIỂM TRA VÀ BÀN GIAO
+- Kiểm tra copy khớp JSON; anchor hợp lệ; đúng navy/teal; không email/secret hoặc lưu dữ liệu; không request ngoài cần thiết.
+- Kiểm tra desktop/mobile 1440, 1024, 768, 390, 320 CSS px và cạnh breakpoint; keyboard, focus, menu, details, no-JS, reduced motion, zoom. Làm theo qa/ACCEPTANCE_CRITERIA.md, ghi rõ việc đã kiểm tra thực tế và việc chưa làm.
+- Nếu dùng prototype nguyên dạng, python tools/check_package.py để kiểm tra gói; nếu đã chuyển framework, dùng kiểm tra phù hợp với dự án và kiểm tra tương đương, không báo đạt bằng cách kiểm tra prototype cũ.
+- Chỉ sửa lỗi cần thiết, không tự mở rộng Trang 2/3. Kết thúc bằng đường dẫn tệp đã tạo, cách chạy/xem, kết quả kiểm tra và giới hạn còn lại.
+
+Hãy bắt đầu bằng kiểm tra dự án và triển khai ngay trong phạm vi trên. Các lựa chọn triển khai thông thường có thể tự quyết theo spec, không dừng hỏi lại.

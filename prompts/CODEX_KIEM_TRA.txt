@@ -1,0 +1,9 @@
+Hãy rà soát bản triển khai Trang 1 ModelLab AI theo gói thiết kế này và sửa các lỗi có thể sửa trong phạm vi landing page.
+
+Đọc content/copy.vi.json, docs/01_PRD_VA_PHAM_VI.md, docs/02_UI_RESPONSIVE.md, docs/03_COMPONENTS_STATES_A11Y.md và qa/ACCEPTANCE_CRITERIA.md. Đối chiếu code đang chạy, không chỉ đọc prototype tham khảo.
+
+Ưu tiên: (1) email/secrets và mô tả sai chức năng hiện có; (2) nguyên tắc học sinh tự mô hình hóa; (3) copy/trạng thái demo; (4) link/menu/details/focus; (5) responsive/contrast/keyboard; (6) ranh giới route và khả năng tích hợp sau này.
+
+Kiểm tra không có login giả, chat giả, lưu localStorage, analytics, form thu dữ liệu hoặc đường dẫn tương lai hỏng. Xác nhận màu #183C48/#226D78, nội dung tiếng Việt và đầy đủ các khu vực. Kiểm tra kích thước 320/390/768/1024/1440 và cạnh breakpoint, reduced motion, no-JS và keyboard khi công cụ cho phép. Không tự tuyên bố đạt các kiểm tra chưa chạy.
+
+Trả: lỗi kèm vị trí và ảnh hưởng; thay đổi đã sửa; kết quả từng nhóm acceptance; cách chạy lại kiểm tra; phần chưa xác minh. Không triển khai backend, không cài tính năng mới và không xuất bản.

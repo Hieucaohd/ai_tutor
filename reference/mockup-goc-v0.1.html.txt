@@ -1,0 +1,116 @@
+<div id="ml-top" class="ml">
+  <style>
+    .ml{font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:#f6f9f9;color:#183c48;border-radius:14px;overflow:hidden;font-size:14px}
+    .ml *{box-sizing:border-box}
+    .ml a{text-decoration:none}
+    .ml nav{display:flex;justify-content:space-between;align-items:center;padding:18px 28px;background:white;border-bottom:1px solid #e4eded;gap:16px}
+    .ml .brand{display:flex;align-items:center;gap:10px;font-size:19px;font-weight:800;color:#183c48;white-space:nowrap}
+    .ml .logo{display:grid;place-items:center;width:35px;height:35px;border-radius:11px;background:#226d78;color:white;font-weight:700;font-size:21px}
+    .ml .navlinks{display:flex;align-items:center;gap:21px;font-size:12px;color:#536d73}
+    .ml .navlinks a{color:#536d73}
+    .ml .navlinks a:hover{color:#226d78}
+    .ml .navstatus{border:1px solid #b8d2d4;color:#226d78;border-radius:8px;padding:8px 10px;font-size:11px;white-space:nowrap}
+    .ml .hero{display:grid;grid-template-columns:1.12fr .88fr;gap:28px;padding:55px 32px 50px;background:linear-gradient(125deg,#eef8f7 0%,#f8fafb 72%)}
+    .ml .eyebrow{font-size:11px;letter-spacing:1.4px;color:#226d78;font-weight:800;margin-bottom:17px}
+    .ml h1{font-size:clamp(27px,4.5vw,44px);line-height:1.17;letter-spacing:-1.2px;margin:0 0 18px;font-weight:800}
+    .ml h1 em{font-style:normal;color:#226d78}
+    .ml .lead{font-size:14px;line-height:1.75;color:#526971;max-width:490px;margin-bottom:25px}
+    .ml .cta{display:flex;flex-wrap:wrap;gap:10px}
+    .ml .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:10px;font-size:12px;font-weight:700}
+    .ml .primary{background:#226d78;color:white}
+    .ml .secondary{background:white;border:1px solid #d3e1e1;color:#183c48}
+    .ml .mock{background:white;border:1px solid #dce8e7;border-radius:17px;box-shadow:0 16px 38px #1b5b6815;padding:15px;align-self:center;min-width:0}
+    .ml .mockhead{display:flex;justify-content:space-between;align-items:center;padding:2px 3px 12px;border-bottom:1px solid #e7eeee;font-weight:700;font-size:12px}
+    .ml .dot{height:8px;width:8px;background:#4aa48b;border-radius:100%;display:inline-block;margin-right:5px}
+    .ml .progress{display:flex;gap:4px;margin:13px 0}
+    .ml .progress span{height:5px;flex:1;border-radius:8px;background:#e1e9e9}
+    .ml .progress span.on{background:#226d78}
+    .ml .bubble{padding:12px 13px;border-radius:11px;margin:10px 0;font-size:12px;line-height:1.55}
+    .ml .bot{background:#edf5f4;margin-right:20px}
+    .ml .student{background:#e8eef6;margin-left:36px}
+    .ml .speaker{font-size:10px;color:#688087;font-weight:800;margin-bottom:5px}
+    .ml .micro{font-size:10px;color:#678087;line-height:1.5;margin-top:12px}
+    .ml section{padding:40px 32px}
+    .ml .secintro{max-width:640px;margin:0 auto 25px;text-align:center}
+    .ml h2{font-size:25px;letter-spacing:-.5px;color:#183c48;margin:0 0 10px}
+    .ml .desc{font-size:13px;line-height:1.7;color:#61757b}
+    .ml .features{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+    .ml .feature{background:white;border:1px solid #e0e9e9;border-radius:13px;padding:21px 17px}
+    .ml .ficon{height:35px;width:35px;background:#e8f4f2;color:#226d78;border-radius:10px;display:grid;place-items:center;font-size:19px;margin-bottom:15px}
+    .ml h3{font-size:14px;margin:0 0 9px;color:#183c48}
+    .ml .feature p{font-size:12px;color:#61757b;line-height:1.7;margin:0}
+    .ml .steps{background:#eaf2f2}
+    .ml .stepgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+    .ml .step{background:white;border:1px solid #dce7e7;border-radius:12px;padding:18px 13px}
+    .ml .number{color:#226d78;font-size:21px;font-weight:800;margin-bottom:12px}
+    .ml .step p{font-size:11px;color:#63787e;line-height:1.6;margin:0}
+    .ml .coach{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center}
+    .ml .coachpanel{border-radius:13px;background:#183c48;padding:24px;color:white}
+    .ml .coachpanel .line{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid #ffffff23;font-size:12px}
+    .ml .coachpanel .line:last-child{border:0}
+    .ml .coachpanel b{color:#8dd5d0;font-size:15px}
+    .ml .trust{background:#e9f3f1;border-top:1px solid #d7e8e4;padding:26px 32px;display:flex;gap:16px;align-items:flex-start}
+    .ml .shield{font-size:26px}
+    .ml .trust h3{margin:0 0 5px}
+    .ml .trust p{font-size:12px;line-height:1.65;color:#526f72;margin:0}
+    .ml footer{background:#183c48;color:#d0e1e2;padding:18px 30px;display:flex;justify-content:space-between;gap:12px;font-size:11px}
+    @media(max-width:670px){.ml nav{padding:15px}.ml .navlinks{display:none}.ml .hero{grid-template-columns:1fr;padding:32px 20px}.ml section{padding:30px 20px}.ml .features{grid-template-columns:1fr}.ml .stepgrid{grid-template-columns:repeat(2,1fr)}.ml .coach{grid-template-columns:1fr}.ml footer{flex-direction:column}.ml .trust{padding:22px}}
+  </style>
+  <nav>
+    <div class="brand"><div class="logo">M</div> ModelLab <span style="color:#226d78">AI</span></div>
+    <div class="navlinks"><a href="#ml-top">Giới thiệu</a><a href="#ml-coach">Coach 7</a><a href="#ml-steps">Quy trình học</a></div>
+    <div class="navstatus">Bản thiết kế demo</div>
+  </nav>
+  <div class="hero">
+    <div>
+      <div class="eyebrow">AI TRỢ GIẢNG · MÔ HÌNH HÓA VẬT LÍ</div>
+      <h1>Tự xây dựng mô hình.<br><em>AI đồng hành, không làm thay.</em></h1>
+      <div class="lead">Khám phá Vật lí thông qua việc tự xây dựng, thực thi và kiểm nghiệm mô hình bằng Coach 7. AI trợ giảng sẽ đặt câu hỏi, gợi mở và hỗ trợ em vượt qua khó khăn theo từng bước.</div>
+      <div class="cta"><a class="btn primary" href="#ml-steps">Khám phá cách học ↓</a><a class="btn secondary" href="#ml-coach">Tìm hiểu Coach 7</a></div>
+    </div>
+    <div class="mock">
+      <div class="mockhead"><span><span class="dot"></span> Phiên học tập minh họa</span><span style="color:#718b90;font-weight:500">Bước 3/9</span></div>
+      <div class="progress"><span class="on"></span><span class="on"></span><span class="on"></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="bubble bot"><div class="speaker">AI TRỢ GIẢNG</div>Trước khi xây dựng mô hình, em nghĩ những đại lượng nào thay đổi theo thời gian?</div>
+      <div class="bubble student"><div class="speaker">HỌC SINH</div>Em nghĩ vị trí và vận tốc của vật đều thay đổi.</div>
+      <div class="bubble bot"><div class="speaker">AI TRỢ GIẢNG</div>Em hãy thử giải thích mối quan hệ giữa hai đại lượng đó. Sau đó, chúng ta sẽ chọn cách biểu diễn trên Coach 7.</div>
+      <div class="micro">Ví dụ minh họa · AI chưa kết nối với hệ thống thực</div>
+    </div>
+  </div>
+  <section id="ml-features">
+    <div class="secintro"><h2>Học Vật lí bằng cách tự khám phá</h2><div class="desc">AI không cung cấp sẵn một mô hình để sao chép. Hệ thống hướng đến giúp em hiểu, tự xây dựng và kiểm chứng những lựa chọn của mình.</div></div>
+    <div class="features">
+      <div class="feature"><div class="ficon">◎</div><h3>Học sinh làm chủ</h3><p>Em lựa chọn giả định, xác định đại lượng, thiết lập quan hệ và tự giải thích kết quả.</p></div>
+      <div class="feature"><div class="ficon">✧</div><h3>Gợi ý đúng lúc</h3><p>AI đặt câu hỏi, đưa gợi ý theo mức độ cần thiết và hướng dẫn thao tác khi em gặp khó khăn.</p></div>
+      <div class="feature"><div class="ficon">▤</div><h3>Lưu hành trình học tập</h3><p>Lịch sử trao đổi và sản phẩm học tập dự kiến được lưu theo tài khoản để em theo dõi tiến bộ.</p></div>
+    </div>
+  </section>
+  <section id="ml-steps" class="steps">
+    <div class="secintro"><h2>Hành trình học tập diễn ra thế nào?</h2><div class="desc">Mỗi nhiệm vụ có các giai đoạn rõ ràng, nhưng em có thể quay lại kiểm tra và sửa mô hình bất cứ khi nào cần.</div></div>
+    <div class="stepgrid">
+      <div class="step"><div class="number">01</div><h3>Hiểu vấn đề</h3><p>Xác định hiện tượng, mục tiêu, giả định và đại lượng.</p></div>
+      <div class="step"><div class="number">02</div><h3>Tạo mô hình</h3><p>Thiết lập quan hệ và xây dựng mô hình trong Coach 7.</p></div>
+      <div class="step"><div class="number">03</div><h3>Nhận hỗ trợ</h3><p>Hỏi AI khi gặp khó và tự thực hiện bước tiếp theo.</p></div>
+      <div class="step"><div class="number">04</div><h3>Kiểm chứng</h3><p>Phân tích đồ thị, so sánh dữ liệu và điều chỉnh mô hình.</p></div>
+    </div>
+  </section>
+  <section id="ml-coach" class="coach">
+    <div>
+      <div class="eyebrow">MÔI TRƯỜNG THỰC HÀNH</div>
+      <h2>Coach 7 là công cụ xây dựng và kiểm nghiệm mô hình</h2>
+      <div class="desc">Em sẽ thực hiện mô hình hóa trên phần mềm Coach 7. Website hỗ trợ giải thích quy trình và tương tác với AI, nhưng không tự động thay thế các thao tác và quyết định của em trên phần mềm.</div>
+      <div style="margin-top:18px"><a class="btn secondary" href="#ml-steps">Xem quy trình học ↑</a></div>
+    </div>
+    <div class="coachpanel">
+      <div class="line"><b>01</b> Thiết lập mô hình từ quan hệ Vật lí</div>
+      <div class="line"><b>02</b> Chạy mô hình và quan sát đồ thị</div>
+      <div class="line"><b>03</b> Đối chiếu dữ liệu thực nghiệm</div>
+      <div class="line"><b>04</b> Đánh giá và sửa đổi mô hình</div>
+    </div>
+  </section>
+  <div id="ml-trust" class="trust">
+    <div class="shield">♧</div>
+    <div><h3>Học tập có trách nhiệm và bảo vệ dữ liệu</h3><p>Hồ sơ học tập chỉ được lưu và sử dụng theo phạm vi đồng ý tham gia, với quyền truy cập phù hợp. AI là công cụ hỗ trợ; giáo viên và người nghiên cứu chịu trách nhiệm giám sát, đánh giá.</p></div>
+  </div>
+  <footer><span>ModelLab AI · Thiết kế giao diện nghiên cứu v0.1</span><span>Chưa triển khai đăng nhập, lưu dữ liệu hoặc kết nối AI</span></footer>
+</div>

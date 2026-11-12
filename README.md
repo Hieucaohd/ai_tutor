@@ -55,4 +55,6 @@ git push -u origin main
 vercel.cmd --prod
 ```
 
+Nếu Git báo khác chủ sở hữu do tài khoản sandbox tạo repository, thêm `-c safe.directory=D:/code/ai_tutor` sau `git` cho lệnh ở workspace này. Không cần thay cấu hình Git toàn cục.
+
 Chưa xuất bản trong bản bàn giao cục bộ. Yêu cầu ban đầu có cả chỉ thị deploy và giới hạn chưa đưa lên Internet; cần xác định chỉ thị áp dụng trước khi phát hành. Không suy từ mã client rằng nhà cung cấp hosting không ghi log kỹ thuật; cần kiểm tra cấu hình hosting khi phát hành.
