@@ -2,6 +2,8 @@
 
 Landing `/` bằng HTML/CSS/JavaScript thuần, dựng từ gói thiết kế v1.0 ngày 12/11/2026. Không cần npm, framework, tài khoản hay khóa API. Giữ nguyên 78 khóa trong `content/copy.vi.json` và thiết kế trong `design/tokens.json`.
 
+**Website:** https://modellab-ai.vercel.app · **Repository:** https://github.com/Hieucaohd/ai_tutor
+
 ## Chạy cục bộ
 
 Tại `D:\code\ai_tutor`:
@@ -32,6 +34,7 @@ Sửa template/copy/CSS/JS ở nguồn rồi chạy lại build. Gói đầu và
 python tools/check_site.py
 node --check src/app.js
 node tools/browser_qa.mjs
+python tools/check_deployment.py
 ```
 
 Bộ QA trình duyệt cần Node 22+ và Chrome đã mở cổng debug 9222, cùng máy chủ 4173 đang chạy. Nó tạo context riêng, kiểm tra bản `dist/`, lưu `qa/browser-results.json` và ảnh trong `qa/screenshots/`, rồi đóng context của chính nó. Không sử dụng các tab hay phiên ChatGPT có sẵn. Cổng debug chỉ phục vụ công cụ QA trên máy phát triển, không thuộc website.
@@ -46,7 +49,7 @@ Tạo `delivery/ModelLab_AI_P1.zip`, kèm nguồn, bản chạy, tài liệu và
 
 `vercel.json` chọn static output `dist/`, không framework, không lệnh build trên máy chủ, không rewrite các route tương lai về landing. Chính sách nội dung chặn kết nối API và tài nguyên ngoài; không có analytics được thêm bởi mã trang.
 
-Khi đã có repository đích và đã xác nhận xuất bản:
+Project Vercel `modellab-ai` đã được liên kết trên máy triển khai; bản landing đã được xác nhận xuất bản. Với lần cập nhật tiếp theo:
 
 ```powershell
 python tools/build_site.py
@@ -57,4 +60,4 @@ vercel.cmd --prod
 
 Nếu Git báo khác chủ sở hữu do tài khoản sandbox tạo repository, thêm `-c safe.directory=D:/code/ai_tutor` sau `git` cho lệnh ở workspace này. Không cần thay cấu hình Git toàn cục.
 
-Chưa xuất bản trong bản bàn giao cục bộ. Yêu cầu ban đầu có cả chỉ thị deploy và giới hạn chưa đưa lên Internet; cần xác định chỉ thị áp dụng trước khi phát hành. Không suy từ mã client rằng nhà cung cấp hosting không ghi log kỹ thuật; cần kiểm tra cấu hình hosting khi phát hành.
+Production đã qua 12 kiểm tra HTTPS không cần đăng nhập: bốn tệp công khai khớp SHA-256 với dist, có CSP/nosniff và không Set-Cookie trong phản hồi đã kiểm tra; các route tương lai/tệp nguồn trả 404. Không suy từ mã client rằng nhà cung cấp hosting không ghi log kỹ thuật; chưa thẩm định cấu hình lưu log của nhà cung cấp.

@@ -1,0 +1,103 @@
+{
+  "origin": "https://modellab-ai.vercel.app",
+  "authentication": "none; no deployment-protection bypass",
+  "passed": true,
+  "count": 12,
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "final_url": "https://modellab-ai.vercel.app/",
+      "content_type": "text/html",
+      "sha256_matches_dist": true,
+      "content_security_policy": "default-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'",
+      "no_application_cookie": true,
+      "nosniff": true,
+      "passed": true
+    },
+    {
+      "path": "/styles.css",
+      "status": 200,
+      "final_url": "https://modellab-ai.vercel.app/styles.css",
+      "content_type": "text/css",
+      "sha256_matches_dist": true,
+      "content_security_policy": "default-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'",
+      "no_application_cookie": true,
+      "nosniff": true,
+      "passed": true
+    },
+    {
+      "path": "/app.js",
+      "status": 200,
+      "final_url": "https://modellab-ai.vercel.app/app.js",
+      "content_type": "application/javascript",
+      "sha256_matches_dist": true,
+      "content_security_policy": "default-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'",
+      "no_application_cookie": true,
+      "nosniff": true,
+      "passed": true
+    },
+    {
+      "path": "/assets/mark.svg",
+      "status": 200,
+      "final_url": "https://modellab-ai.vercel.app/assets/mark.svg",
+      "content_type": "image/svg+xml",
+      "sha256_matches_dist": true,
+      "content_security_policy": "default-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'",
+      "no_application_cookie": true,
+      "nosniff": true,
+      "passed": true
+    },
+    {
+      "path": "/huong-dan",
+      "status": 404,
+      "final_url": "https://modellab-ai.vercel.app/huong-dan",
+      "passed": true
+    },
+    {
+      "path": "/tro-giang",
+      "status": 404,
+      "final_url": "https://modellab-ai.vercel.app/tro-giang",
+      "passed": true
+    },
+    {
+      "path": "/ho-so",
+      "status": 404,
+      "final_url": "https://modellab-ai.vercel.app/ho-so",
+      "passed": true
+    },
+    {
+      "path": "/dang-nhap",
+      "status": 404,
+      "final_url": "https://modellab-ai.vercel.app/dang-nhap",
+      "passed": true
+    },
+    {
+      "path": "/quyen-rieng-tu",
+      "status": 404,
+      "final_url": "https://modellab-ai.vercel.app/quyen-rieng-tu",
+      "passed": true
+    },
+    {
+      "path": "/content/copy.vi.json",
+      "status": 404,
+      "final_url": "https://modellab-ai.vercel.app/content/copy.vi.json",
+      "passed": true
+    },
+    {
+      "path": "/docs/01_PRD_VA_PHAM_VI.md",
+      "status": 404,
+      "final_url": "https://modellab-ai.vercel.app/docs/01_PRD_VA_PHAM_VI.md",
+      "passed": true
+    },
+    {
+      "path": "/.git/config",
+      "status": 404,
+      "final_url": "https://modellab-ai.vercel.app/.git/config",
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Does not audit provider-side access logs or retention."
+  ]
+}

@@ -28,3 +28,7 @@ Không cần XEM_NHANH.html trong bản chạy; dist/index.html và tài nguyên
 ## Phạm vi giữ nguyên
 
 Chỉ landing `/`, menu và details dữ liệu native. Transcript ba lượt tĩnh, minh họa Bước 3/9. Không backend/login/chat/API/upload/hồ sơ, không storage/tracking hoặc dịch vụ bên thứ ba. Các trang tương lai chỉ là văn bản “Dự kiến”.
+
+## Phát hành được xác nhận
+
+Landing đã được cho phép xuất bản và deploy lên `https://modellab-ai.vercel.app`, mã nguồn tại `https://github.com/Hieucaohd/ai_tutor`. Quyết định này thay giới hạn chỉ bàn giao cục bộ của tài liệu gốc 01–07 đối với Trang 1; không mở rộng phạm vi sản phẩm. `qa/deployment-results.json` ghi kiểm tra HTTPS sau phát hành. Không đưa `.vercel/`, `.env*`, ZIP hoặc tài liệu nguồn vào nội dung công khai của website.

@@ -1,9 +1,9 @@
 {
   "archive": "delivery/ModelLab_AI_P1.zip",
-  "files": 54,
-  "bytes": 4600768,
+  "files": 57,
+  "bytes": 4604437,
   "crc": "PASS",
   "safe_paths": "PASS",
   "sha256_manifest": "PASS",
-  "archive_sha256": "10cb906f34ea2b819665211eccec846a692e658ebc62af5efb08da2fb348f254"
+  "archive_sha256": "f67b17565e78b6dda0ceb1afef15dfe321d5dd6dbb98e245d099f3978746b33c"
 }

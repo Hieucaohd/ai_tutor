@@ -1,6 +1,6 @@
 # Báo cáo kiểm tra bản triển khai — 12/11/2026
 
-Đã có mã chạy tại `dist/`, kiểm thử qua `http://127.0.0.1:4173`. Kết quả: **42/42 kiểm tra tĩnh trên bản dist và 88/88 kiểm tra trình duyệt đạt**. Không coi đây là chứng nhận WCAG hoặc nghiệm thu nghiên cứu với học sinh; các phần chưa làm được ghi riêng bên dưới. Chưa push ra remote hoặc deploy.
+Đã có mã chạy tại `dist/`, kiểm thử qua `http://127.0.0.1:4173`, đã push lên https://github.com/Hieucaohd/ai_tutor và deploy production tại https://modellab-ai.vercel.app. Kết quả: **42/42 kiểm tra tĩnh, 88/88 kiểm tra trình duyệt local và 12/12 kiểm tra HTTPS production đạt**. Không coi đây là chứng nhận WCAG hoặc nghiệm thu nghiên cứu với học sinh; các phần chưa làm được ghi riêng bên dưới.
 
 ## Môi trường và bằng chứng
 
@@ -10,6 +10,8 @@
 - `browser-results.json`: từng phép kiểm tra, phép đo layout, cây heading và danh sách tài nguyên.
 - `static-results.json`: copy, cấu trúc, phạm vi, tài nguyên, quét thông tin riêng, tương phản và SHA-256 của bốn tệp công khai.
 - `http-results.json`: bốn phản hồi 200 và tám phản hồi 404 mong đợi.
+- `deployment-results.json`: 12 kiểm tra HTTPS công khai, không đăng nhập hoặc dùng bypass; bốn tệp trên Vercel có SHA-256 khớp dist và security headers; tám route/tệp chưa công khai trả 404.
+- `vercel-inputs.json`: kiểm tra trước upload; đủ bốn tệp dist, loại source/tài liệu/ZIP/tệp môi trường. Không chứa giá trị credential.
 - `screenshots/width-*.png`, `screenshots/text-spacing-*.png`, `screenshots/no-js-320.png`, `screenshots/forced-colors.png`: ảnh Chrome thật, không phải wireframe.
 - Gói gốc giữ nguyên, đã chạy `python tools/check_package.py`: 68/68 đạt. Kết quả này chỉ xác nhận đầu vào.
 
@@ -35,6 +37,7 @@
 | TE-02–TE-04 | Đạt | GET / và ba tài nguyên đều 200; không console/runtime/network error trong context QA riêng; không yêu cầu bên thứ ba; cookie/localStorage/sessionStorage/IndexedDB trống |
 | PK-01 | Đạt | Chạy package_site.py: giải nén kiểm tra CRC, safe paths và SHA-256 cho từng tệp; chi tiết package-results.json |
 | PK-02–PK-03 | Đạt đọc tài liệu/chạy lệnh | Có spec 01–07, ghi nhận thay đổi triển khai 08, README, copy/tokens, nguồn, dist và bộ QA; lệnh build/serve/check đã chạy thực tế |
+| Production HTTP | Đạt 12/12 | GET /, CSS, JS, SVG đều 200 và khớp SHA-256 với dist; đúng content type; CSP/nosniff có hiệu lực, không Set-Cookie trong các phản hồi này; route tương lai và tệp nguồn/Git trả 404 |
 
 Thanh cuộn dọc Windows chiếm 15 CSS px. Phép đo chống tràn dùng `scrollWidth <= clientWidth`, không so với innerWidth. Container giữ gutter 20px dưới 768 và 32px từ 768, max 1160; không dùng overflow-x:hidden để che lỗi. Breakpoint kiểm tra theo viewport CSS.
 
@@ -44,6 +47,16 @@ Thanh cuộn dọc Windows chiếm 15 CSS px. Phép đo chống tràn dùng `scr
 
 Anchor có modifier giữ hành vi native; bộ xử lí focus chỉ áp dụng kích hoạt thông thường. Các khác biệt trong bộ QA (scrollbar Windows, focus của context thử và cuộn mượt còn đang chạy từ ca trước) đã được sửa trong công cụ kiểm thử, không thay thiết kế để ép kết quả.
 
+Khi kiểm tra gói Vercel trước upload, quy tắc ignore `assets` ban đầu khớp cả `dist/assets`. Đã giới hạn thành `/assets/` và xác minh SVG hiện diện trước lần deploy đầu tiên. Thư mục `delivery` cũng được loại khỏi gói upload.
+
+## Phát hành
+
+- Git remote: `https://github.com/Hieucaohd/ai_tutor.git`, nhánh `main`, push thường, không force.
+- Vercel project: `modellab-ai`; production alias: `https://modellab-ai.vercel.app`.
+- Bản deploy đầu tiên: `dpl_Dxa6s5DusqcFfW95u5BJe4mY1BF5`, trạng thái READY, từ commit `d9e2039`.
+- Các commit báo cáo sau deployment không thay đổi bốn tệp công khai. Không tuyên bố đã chạy lại 88 ca browser trên URL production; đã kiểm tra HTTPS và đối chiếu bytes với bản dist đã chạy browser QA.
+- Chủ dự án đã xác nhận cho phép deploy bản landing. Các nhãn demo/chưa có login, AI thật và hồ sơ vẫn đúng; phát hành landing không bật những tính năng tương lai.
+
 ## Chưa kiểm tra hoặc chưa thực hiện
 
 - **Zoom trình duyệt thật 200%/400%:** công cụ điều khiển cửa sổ Chrome hết thời gian chờ cấp quyền ứng dụng. Không coi resize viewport hay thay text spacing là đã kiểm tra zoom thật.
@@ -51,9 +64,7 @@ Anchor có modifier giữ hành vi native; bộ xử lí focus chỉ áp dụng 
 - High contrast của Windows thật, cảm ứng trên thiết bị vật lý, Safari/Firefox chưa thử. Forced colors và kích thước mobile ở trên là mô phỏng trong Chrome desktop.
 - Chưa tổ chức kiểm tra hiểu nội dung với học sinh. Không thu dữ liệu học sinh để thực hiện QA này.
 - Chưa mở trực tiếp file://; HTTP đã kiểm tra đầy đủ.
-- Chưa kiểm tra hạ tầng Vercel/log truy cập vì chưa xuất bản. Vercel CLI có sẵn và kiểm tra tài khoản thành công; cấu hình static đã chuẩn bị.
-- Git ban đầu chưa có repository/remote. Đã khởi tạo repository cục bộ; cần URL repository đích để push.
-- Yêu cầu có cả “deploy lên Vercel” và “chưa xuất bản/deploy ra Internet”. Chưa phát hành khi hai chỉ thị này chưa được làm rõ.
+- Chưa thẩm định log truy cập và chính sách lưu log phía nhà cung cấp Vercel. Kiểm tra HTTPS/header không xác nhận nhà cung cấp không lưu log.
 
 Đăng nhập, API AI, hồ sơ, upload, đồng ý tham gia có hiệu lực và phân quyền production không áp dụng ở P1; không được ghi là tính năng đã kiểm thử.
 
@@ -70,6 +81,7 @@ Trong terminal khác, với Chrome 9222 đang mở:
 
 ```powershell
 node tools/browser_qa.mjs
+python tools/check_deployment.py
 python tools/package_site.py
 ```
 
