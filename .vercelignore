@@ -9,7 +9,8 @@ design
 docs
 qa
 tools
-assets
+/assets/
 reference
 prompts
+delivery
 README.md

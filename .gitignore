@@ -10,3 +10,6 @@ __pycache__/
 /qa/screenshots/
 /delivery/
 *.log
+
+.vercel
+.env*

@@ -1,0 +1,57 @@
+{
+  "framework": {
+    "name": "Other",
+    "slug": null
+  },
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size": 45,
+      "mode": 33206,
+      "sha": "f5d1e0eb1ca278fa0487cc593980b64bc32c3dfd"
+    },
+    {
+      "path": ".vercelignore",
+      "size": 152,
+      "mode": 33206,
+      "sha": "e317ffe989ed0aa81318b19b8bc7636000560f87"
+    },
+    {
+      "path": "assets",
+      "size": 0,
+      "mode": 16822
+    },
+    {
+      "path": "dist/app.js",
+      "size": 2348,
+      "mode": 33206,
+      "sha": "4a1efc08ebf7eded67dce29cd476db153a148476"
+    },
+    {
+      "path": "dist/assets/mark.svg",
+      "size": 246,
+      "mode": 33206,
+      "sha": "acaa8c1d458ac976746d6c11b4212112f5b4664c"
+    },
+    {
+      "path": "dist/index.html",
+      "size": 13221,
+      "mode": 33206,
+      "sha": "247e7c659f0db9edba1a920a646850385c05533f"
+    },
+    {
+      "path": "dist/styles.css",
+      "size": 10210,
+      "mode": 33206,
+      "sha": "7f51dec0461330c6d0f5a88a399d2a725e9c8651"
+    },
+    {
+      "path": "vercel.json",
+      "size": 483,
+      "mode": 33206,
+      "sha": "ca7f3902b955905f8d30794b94b0f2f55b453783"
+    }
+  ],
+  "public_files_complete": true,
+  "no_source_or_credentials": true
+}
